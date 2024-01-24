@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document.write() 활용</title>
+    <style>
+        .highlight-yellow{
+        background-color: yellow;
+    }
+        .highlight-custom{
+        background-color:blueviolet;
+    }
+    </style>
+</head>
+<body>
+    <h3>document.write() 활용</h3>
+    <hr>
+    <script>
+         // JavaScript를 사용하여 클래스 변경
+         document.addEventListener('DOMContentLoaded', function() {
+         var element = document.querySelector('.highlight-yellow');
+
+         // 노란색 클래스를 제거하고 다른 색상 클래스를 추가
+         element.classList.remove('highlight-yellow');
+         element.classList.add('highlight-custom');
+         })
+        document.write("<h3>Welcome!</h3>");
+        document.write("2 + 5는 <br>");
+        document.write("<mark class='highlight-custom'>7 입니다.</mark>");
+    </script>
+</body>
+</html>
